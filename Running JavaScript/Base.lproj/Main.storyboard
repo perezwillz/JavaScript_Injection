@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Running_JavaScript" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="czL-80-7T9">
+                                <rect key="frame" x="132" y="414" width="150" height="68"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eFn-1Z-G5J">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="2"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pdy-8U-5Qw">
+                                        <rect key="frame" x="0.0" y="22" width="150" height="2"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2IT-lF-52C">
+                                        <rect key="frame" x="0.0" y="44" width="150" height="2"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TVK-2m-goE">
+                                        <rect key="frame" x="0.0" y="66" width="150" height="2"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="czL-80-7T9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cbd-Lh-Rhp"/>
+                            <constraint firstItem="czL-80-7T9" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.362319" id="QrL-eM-pIz"/>
+                            <constraint firstItem="czL-80-7T9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bLz-gI-roG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="progressViews" destination="eFn-1Z-G5J" collectionClass="NSMutableArray" id="1nx-jJ-m1E"/>
+                        <outletCollection property="progressViews" destination="pdy-8U-5Qw" collectionClass="NSMutableArray" id="Eb1-ub-xsq"/>
+                        <outletCollection property="progressViews" destination="2IT-lF-52C" collectionClass="NSMutableArray" id="bzb-GV-kiW"/>
+                        <outletCollection property="progressViews" destination="TVK-2m-goE" collectionClass="NSMutableArray" id="25f-s5-tZh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-1"/>
+        </scene>
+    </scenes>
+</document>
